@@ -57,6 +57,6 @@ flutter build apk --release -PallowCleartextTraffic=true --dart-define=ALLOW_INS
 
 ## Release artifact and publication status
 
-The requested public repository is [github.com/ws718239-gif/Kiosk](https://github.com/ws718239-gif/Kiosk), with the submission intended for its `main` branch. The Android release build is configured with the debug signing key in `android/app/build.gradle.kts`; it is not a production-signed APK. For assessment distribution, build the APK and attach it to a GitHub release. For production distribution, configure a private release keystore first. Do not commit signing credentials.
+The requested public repository is [github.com/ws718239-gif/Kiosk](https://github.com/ws718239-gif/Kiosk), with the submission intended for its `main` branch. The web release build completed during this audit. The Android arm64 release build did not complete: Gradle remained in `assembleRelease` without producing an APK, so there is no APK artifact to attach yet. The Android release build is configured with the debug signing key in `android/app/build.gradle.kts`; it is not a production-signed APK. Re-run the command above, attach the resulting assessment APK to a GitHub release, and use a private release keystore for production distribution. Do not commit signing credentials.
 
 The assessment brief gives the total time limit as five hours. An exact elapsed time was not recorded, so this submission does not claim a verified completion time.
